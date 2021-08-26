@@ -1,0 +1,6 @@
+<ol >
+  <ng-container *ngFor="let elements of array; let i = index">
+    <li *ngIf="i%2 === 0" [ngClass]="{'redColor':true,'blueColor':false}">{{elements}}</li>
+    <li *ngIf="i%2 !== 0" [ngClass]="{'redColor':false,'blueColor':true}">{{elements}}</li>
+  </ng-container>
+</ol>
